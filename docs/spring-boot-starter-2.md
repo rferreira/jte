@@ -49,7 +49,7 @@ Hello ${model.text}!
 
 ```java linenums="1"
 @GetMapping("/") 
-public String view(Model model, HttpServletResponse response) {
+public String view(Model model) {
     model.addAttribute("model", new DemoModel("Hello World"));
     return "demo";
 }
